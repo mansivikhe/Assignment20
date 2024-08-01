@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexboxes</title>
+    <style>
+        .card {
+            width: 270px;
+            border: 4px solid #660000;
+            border-radius: 10px;
+            background-color: #ffb3b3;
+            margin: 5px;
+            height: 250px;
+           
+
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction:row-reverse;
+            justify-content: space-evenly;
+            background-color: antiquewhite;
+            height: 400px;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .img1 {
+            width: 100%;
+            height: 200px;
+            border-radius: 5px 5px 0 0;
+
+
+
+        }
+
+        .heading {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="img1.jpeg" class="img1">
+            <h1 class="heading">Cat</h1>
+        </div>
+
+        <div class="card">
+            <img src="img2.jpeg" class="img1">
+            <h1 class="heading">Dog</h1>
+        </div>
+
+        <div class="card">
+            <img src="img3.jpeg" class="img1">
+            <h1 class="heading">Panda</h1>
+        </div>
+
+        <div class="card">
+            <img src="img4.jpeg" class="img1">
+            <h1 class="heading">Rabbit</h1>
+        </div>
+
+       
+    </div>
+</body>
+
+</html>
