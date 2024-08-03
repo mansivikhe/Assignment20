@@ -4,71 +4,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexboxes</title>
+    <title>Assignment20</title>
     <style>
-        .card {
-            width: 270px;
-            border: 4px solid #660000;
-            border-radius: 10px;
-            background-color: #ffb3b3;
-            margin: 5px;
-            height: 240px;
-           
-
-        }
-
-        .card-container {
+        .cards-container {
             display: flex;
-            flex-direction:row-reverse;
-            justify-content: space-evenly;
-            background-color: antiquewhite;
-            height: 400px;
+            background-color: bisque;
+            border: 4px double black;
+            flex-direction: row;
+            justify-content: start;
+            height: 450px;
             align-items: center;
             flex-wrap: wrap;
+        }
+        .cards-container2 {
+            display: flex;
+            background-color: bisque;
+            border: 4px double black;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+
+        }
+        .cards-container3 {
+            display: flex;
+            background-color: bisque;
+            border: 4px double black;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: start;
+        }
+        .cards-container5 {
+            display: flex;
+            background-color: bisque;
+            border: 4px double black;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+        }
+        .cards-container6 {
+            display: flex;
+            background-color: bisque;
+            border: 4px double black;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        .cards-container7 {
+            display: flex;
+            background-color: bisque;
+            border: 4px double black;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+
+        .cards-container4 {
+            display: flex;
+            background-color: bisque;
+            border: 4px double black;
+            flex-direction: column-reverse;
 
         }
 
-        .img1 {
+        .card {
+            width: 250px;
+            border: 4px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            background-color: white;
+            height: 250px;
+        }
+
+        .card-img {
             width: 100%;
             height: 200px;
-            border-radius: 5px 5px 0 0;
-
-
-
+            border-radius: 4px 4px 0px 0px;
         }
 
-        .heading {
+        .card-title {
             text-align: center;
-            margin: 0;
-            padding: 0;
-
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <div class="card-container">
+    <h1>Flex Direction:Row And Justify content:start ......align-items: center;</h1>
+    <div class="cards-container">
+     
         <div class="card">
-            <img src="img1.jpeg" class="img1">
-            <h1 class="heading">Cat</h1>
+            <img src="img1.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
         </div>
 
         <div class="card">
-            <img src="img2.jpeg" class="img1">
-            <h1 class="heading">Dog</h1>
+            <img src="img2.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
         </div>
 
         <div class="card">
-            <img src="img3.jpeg" class="img1">
-            <h1 class="heading">Panda</h1>
+            <img src="img3.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
         </div>
 
         <div class="card">
-            <img src="img4.jpeg" class="img1">
-            <h1 class="heading">Rabbit</h1>
+            <img src="img4.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+    </div>
+
+    <h1>Flex Direction:column &  justify-content: End .......align-items: end;</h1>
+    <div class="cards-container2">
+     
+        <div class="card">
+            <img src="img1.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
         </div>
 
-       
+        <div class="card">
+            <img src="img2.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img3.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img4.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+    </div>
+
+    <h1>Flex Direction:row-reverse &  justify-content: center.....align-items: start;</h1>
+    <div class="cards-container3">
+     
+        <div class="card">
+            <img src="img1.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img2.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img3.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img4.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+    </div>
+
+    <h1>Flex Direction:column-reverse</h1>
+    <div class="cards-container4">
+     
+        <div class="card">
+            <img src="img1.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img2.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img3.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img4.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+    </div>
+
+    <h1>  justify-content: space-evenly</h1>
+    <div class="cards-container5">
+     
+        <div class="card">
+            <img src="img1.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img2.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img3.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img4.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+    </div>
+
+    <h1>  justify-content: space-between</h1>
+    <div class="cards-container6">
+     
+        <div class="card">
+            <img src="img1.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img2.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img3.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img4.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+    </div>
+
+    <h1>  justify-content: space-around</h1>
+    <div class="cards-container7">
+     
+        <div class="card">
+            <img src="img1.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img2.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img3.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
+
+        <div class="card">
+            <img src="img4.jpeg" class="card-img">
+            <h2 class="card-title"> Cat</h2>
+        </div>
     </div>
 </body>
 
